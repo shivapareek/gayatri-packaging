@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gayatri Packaging</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/g-logo.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <svg class="size-full absolute -z-10 inset-0" width="1440" height="720" viewBox="0 0 1440 720" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+    <path stroke="#E2E8F0" stroke-opacity=".7" d="M-15.227 702.342H1439.7" />
+    <circle cx="711.819" cy="372.562" r="308.334" stroke="#E2E8F0" stroke-opacity=".7" />
+    <circle cx="16.942" cy="20.834" r="308.334" stroke="#E2E8F0" stroke-opacity=".7" />
+    <path stroke="#E2E8F0" stroke-opacity=".7" d="M-15.227 573.66H1439.7M-15.227 164.029H1439.7" />
+    <circle cx="782.595" cy="411.166" r="308.334" stroke="#E2E8F0" stroke-opacity=".7" />
+  </svg>
+
+  <nav
+    class="z-50 flex items-center justify-between w-full py-4 px-6 md:px-16 lg:px-24 xl:px-32 backdrop-blur text-slate-800 text-sm">
+    <a href="/" class="flex items-center gap-2 text-2xl font-bold text-indigo-600">
+      <img src="img/g-logo.svg" alt="logo" class="w-8 h-8">
+      Gayatri P&amp;M
+
+      <div class="hidden md:flex items-center gap-8 transition duration-500">
+        <a href="/" class="relative hover:text-indigo-600 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all after:duration-300">
+          Home
+        </a>
+        <a href="#services"class="relative hover:text-indigo-600 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all after:duration-300">
+          Services
+        </a>
+        <a href="#products" class="relative hover:text-indigo-600 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all after:duration-300">
+          Products
+        </a>
+        <a href="#gallery" class="relative hover:text-indigo-600 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all after:duration-300">
+          Gallery
+        </a>
+        <a href="#about" class="relative hover:text-indigo-600 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all after:duration-300">
+          About
+        </a>
+        <a href="#contact" class="relative hover:text-indigo-600 transition after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 hover:after:w-full after:bg-indigo-600 after:transition-all after:duration-300">
+          Contact
+        </a>
+      </div>
+
+      <button id="quote-btn"
+        class="hidden md:inline-flex items-center gap-2 px-6 py-2.5 text-white bg-indigo-600 hover:bg-indigo-700 active:scale-95 transition-all rounded-full">
+        <span>Get a Quote</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+          <path d="M5 12h14"></path>
+          <path d="M13 5l7 7-7 7"></path>
+        </svg>
+      </button>
+      
+      
+      <button id="open-menu" class="md:hidden active:scale-90 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-menu-icon lucide-menu">
+          <path d="M4 5h16" />
+          <path d="M4 12h16" />
+          <path d="M4 19h16" />
+        </svg>
+      </button>
+  </nav>
+  <div id="mobile-navLinks"
+    class="fixed inset-0 z-[100] bg-white/60 text-slate-800 backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 -translate-x-full">
+    <a href="/">
+      Home
+    </a>
+    <a href="#services">
+      Services
+    </a>
+    <a href="#products">
+      Products
+    </a>
+    <a href="#gallery">
+      Gallery
+    </a>
+    <a href="#about">
+      About
+    </a>
+    <a href="#contact">
+      Contact
+    </a>
+    <button id="close-menu"
+      class="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-white hover:bg-slate-200 transition text-black rounded-md flex">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-x-icon lucide-x">
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+    </button>
+  </div>
+
+  <section
+    class="flex flex-col max-md:gap-20 md:flex-row pb-20 items-center justify-between mt-24 px-4 md:px-16 lg:px-24 xl:px-32">
+    <div class="flex flex-col items-center md:items-start">
+      <div
+        class="flex items-center gap-2 text-sm text-blue-800 bg-blue-400/10 border border-indigo-200 rounded-full px-4 py-1">
+        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1.613 8.2a.62.62 0 0 1-.553-.341.59.59 0 0 1 .076-.637l6.048-6.118a.31.31 0 0 1 .375-.069c.061.033.11.084.137.147a.3.3 0 0 1 .014.197L6.537 4.991a.59.59 0 0 0 .07.552.61.61 0 0 0 .504.257h4.276a.62.62 0 0 1 .553.341.59.59 0 0 1-.076.637l-6.048 6.119a.31.31 0 0 1-.375.067.295.295 0 0 1-.15-.344l1.172-3.61a.59.59 0 0 0-.07-.553.61.61 0 0 0-.504-.257z"
+            stroke="#1E4BAF" stroke-miterlimit="5.759" stroke-linecap="round" />
+        </svg>
+        <span>India's Best Packers and Movers and Packaging Materials</span>
+      </div>
+      
+      <h1
+        class="text-center md:text-left text-5xl leading-[68px] md:text-6xl md:leading-[84px] font-medium max-w-xl text-slate-900">
+        Gayatri Packaging Packers and Movers
+      </h1>
+      <p class="text-center md:text-left text-sm text-slate-700 max-w-lg mt-2">
+        Unlock smarter workflows with AI tools designed to boost productivity, simplify tasks and help you do more with
+        less effort.
+      </p>
+      <div class="flex items-center gap-4 mt-8 text-sm">
+        <button id="get-started-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white active:scale-95 rounded-md px-7 h-11">
+          Get Started
+        </button>
+         <button id="explore-products" class="flex items-center gap-2 border border-slate-600 active:scale-95 hover:bg-white/10 transition text-slate-600 rounded-md px-6 h-11">
+                    <span>Explore Products</span>
+                </button>
+      </div>
+    </div>
+    <img src="img/25273815_na_feb_08.jpg" alt="hero"
+      class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl transition-all duration-300">
+  </section>
+
+  <!-- Services -->
+  <div id="services" class="flex flex-col items-center text-center mt-16 md:mt-28 px-4">
+       <div class="inline-block mb-3">
+                    <p class="text-xs bg-indigo-200 text-indigo-600 font-medium px-3 py-1 rounded-full">What we offer</p>
+                </div>
+    <h1 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">Complete Packaging Services</h1>
+    <p class="max-w-2xl mb-14 text-gray-500 text-sm md:text-base">From concept to delivery, we provide comprehensive solutions backed by cutting-edge technology and expert craftsmanship.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl w-full">
+        <!-- Household -->
+        <div class="group flex flex-col items-center py-10 px-6 bg-white border border-gray-200 rounded-xl cursor-pointer hover:border-blue-600 hover:shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 group-hover:bg-blue-600 transition-colors duration-300 mb-4">
+                <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+            </div>
+            <h2 class="text-gray-800 group-hover:text-blue-600 text-xl font-semibold mb-3 transition-colors duration-300">Household</h2>
+            <p class="text-center text-gray-500 text-sm leading-relaxed">Safe and secure packing for all your household items with premium quality materials</p>
+        </div>
+
+        <!-- Furniture -->
+        <div class="group flex flex-col items-center py-10 px-6 bg-white border border-gray-200 rounded-xl cursor-pointer hover:border-blue-600 hover:shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 group-hover:bg-blue-600 transition-colors duration-300 mb-4">
+                <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 16a1 1 0 011-1h4a1 1 0 011 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-3zM14 16a1 1 0 011-1h4a1 1 0 011 1v3a1 1 0 01-1 1h-4a1 1 0 01-1-1v-3z"/>
+                </svg>
+            </div>
+            <h2 class="text-gray-800 group-hover:text-blue-600 text-xl font-semibold mb-3 transition-colors duration-300">Furniture</h2>
+            <p class="text-center text-gray-500 text-sm leading-relaxed">Expert furniture packing and protection ensuring damage-free transportation</p>
+        </div>
+
+        <!-- Office -->
+        <div class="group flex flex-col items-center py-10 px-6 bg-white border border-gray-200 rounded-xl cursor-pointer hover:border-blue-600 hover:shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 group-hover:bg-blue-600 transition-colors duration-300 mb-4">
+                <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                </svg>
+            </div>
+            <h2 class="text-gray-800 group-hover:text-blue-600 text-xl font-semibold mb-3 transition-colors duration-300">Office</h2>
+            <p class="text-center text-gray-500 text-sm leading-relaxed">Professional office relocation services with minimal business disruption</p>
+        </div>
+
+        <!-- Electronics -->
+        <div class="group flex flex-col items-center py-10 px-6 bg-white border border-gray-200 rounded-xl cursor-pointer hover:border-blue-600 hover:shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 group-hover:bg-blue-600 transition-colors duration-300 mb-4">
+                <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+            </div>
+            <h2 class="text-gray-800 group-hover:text-blue-600 text-xl font-semibold mb-3 transition-colors duration-300">Electronics</h2>
+            <p class="text-center text-gray-500 text-sm leading-relaxed">Specialized packing for delicate electronics with anti-static materials</p>
+        </div>
+
+        <!-- Industrial Goods -->
+        <div class="group flex flex-col items-center py-10 px-6 bg-white border border-gray-200 rounded-xl cursor-pointer hover:border-blue-600 hover:shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 group-hover:bg-blue-600 transition-colors duration-300 mb-4">
+                <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                </svg>
+            </div>
+            <h2 class="text-gray-800 group-hover:text-blue-600 text-xl font-semibold mb-3 transition-colors duration-300">Industrial Goods</h2>
+            <p class="text-center text-gray-500 text-sm leading-relaxed">Heavy-duty packaging solutions for industrial equipment and machinery</p>
+        </div>
+
+        <!-- Car Shifting -->
+        <div class="group flex flex-col items-center py-10 px-6 bg-white border border-gray-200 rounded-xl cursor-pointer hover:border-blue-600 hover:shadow-xl transition-all duration-300">
+            <div class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-50 group-hover:bg-blue-600 transition-colors duration-300 mb-4">
+                <svg class="w-8 h-8 text-blue-600 group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+                </svg>
+            </div>
+            <h2 class="text-gray-800 group-hover:text-blue-600 text-xl font-semibold mb-3 transition-colors duration-300">Car Shifting</h2>
+            <p class="text-center text-gray-500 text-sm leading-relaxed">Safe and secure vehicle transportation with enclosed carriers and insurance</p>
+        </div>
+    </div>
+</div>
+
+<!-- products -->
+ <div id="products" class="flex flex-col items-center text-center mt-16 md:mt-28 px-4 bg-gray-50 py-20">
+       <div class="inline-block mb-3">
+                    <p class="text-xs bg-indigo-200 text-indigo-600 font-medium px-3 py-1 rounded-full">Our Products</p>
+                </div>
+    <h1 class="text-3xl md:text-4xl font-semibold mb-4 text-gray-800">Premium Packaging Solutions</h1>
+    <p class="max-w-2xl mb-14 text-gray-500 text-sm md:text-base">Discover our range of high-quality packaging products designed to meet your specific needs</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl w-full">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+            <div class="relative overflow-hidden h-64">
+                <img src="img/paper rolls.png" alt="Paper Rolls" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Paper Rolls</h2>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">High-quality paper rolls suitable for packaging, wrapping, and industrial use</p>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-700">Strong material  </span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-700">Multiple GSM options  </span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-700">Smooth finish</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+            <div class="relative overflow-hidden h-64">
+                <img src="img/airbubble.png" alt="Printed Labels" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div class="p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Air Bubble Sheet</h2>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Protective cushioning material for safe packaging</p>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-700">Shock-absorbent  </span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-700">Lightweight & flexible</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <span class="text-sm text-gray-700">Multiple size options</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+          <div class="relative overflow-hidden h-64">
+            <img src="img/boxess.png" alt="Rigid Boxes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          </div>
+          <div class="p-6">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Rigid Boxes</h2>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">Premium rigid boxes for luxury and industrial packaging needs</p>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                              </svg>
+                            </div>
+                            <span class="text-sm text-gray-700">Customizable designs</span>
+                          </div>
+                          <div class="flex items-center gap-3">
+                            <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                              </svg>
+                            </div>
+                            <span class="text-sm text-gray-700">Eco-friendly materials</span>
+                          </div>
+                          <div class="flex items-center gap-3">
+                            <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                              <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                              </svg>
+                            </div>
+                            <span class="text-sm text-gray-700">Professional finish</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="img/thermacol.png" alt="Printed Labels" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-3">Thermacol</h2>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">Lightweight foam material for insulation and protective packaging</p>
+                            
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Excellent cushioning</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Easy to cut & shape</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Lightweight material</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="img/cellotapes.png" alt="Printed Labels" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-3">Cello Tapes</h2>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">Strong adhesive tapes for sealing and packaging</p>
+                            
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">High stickiness</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Smooth, clean pull</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Available in multiple widths</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group">
+                        <div class="relative overflow-hidden h-64">
+                            <img src="img/strapping.png" alt="Printed Labels" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-3">Strapping Roles</h2>
+                            <p class="text-gray-600 text-sm mb-6 leading-relaxed">Durable rolls for securing and bundling packages</p>
+                            
+                            <div class="space-y-3 mb-6">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">High tensile strength  </span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Suitable for heavy loads </span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-3 h-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <span class="text-sm text-gray-700">Compatible with manual & machine tools</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    </div>
+</div>
+
+
+<!-- gallery -->
+<section id="gallery" class="max-w-5xl mx-auto px-4 mt-16 md:mt-28 mb-12">
+  <h1 class="text-4xl font-semibold text-center mx-auto">Explore <span class="text-yellow-400">Gayatri Packaging</span></h1>
+  <p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">Our Shops Picture</p>
+  <div class="flex flex-wrap items-center justify-center mt-10 mx-auto gap-4">
+    <img class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300" src="img/1.jpg" alt="image">
+    <img class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300" src="img/2.jpg" alt="image">
+    <img class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300" src="img/3.jpg" alt="image">
+    <img class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300" src="img/4.jpg" alt="image">
+    <img class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300" src="img/5.jpg" alt="image">
+    <img class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300" src="img/6.jpg" alt="image">
+    <img class="max-w-56 h-80 object-cover rounded-lg hover:-translate-y-1 transition-all duration-300" src="img/7.jpg" alt="image">
+  </div>
+</section>
+
+<!-- steps -->
+ <div class="flex flex-col items-center text-center mt-16 md:mt-28 px-4 py-20">
+    <!-- Section Header -->
+     <div class="inline-block mb-3">
+                    <p class="text-xs bg-indigo-200 text-indigo-600 font-medium px-3 py-1 rounded-full">How it works</p>
+                </div>
+    <div class="mb-12">
+      
+        
+        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Easy 1, 2, 3 Step To Task</h1>
+        <p class="max-w-3xl mx-auto text-gray-500 text-sm md:text-base leading-relaxed">
+            Experience seamless relocation with our simple three-step process designed to make your move stress-free and efficient
+        </p>
+    </div>
+
+    <!-- Steps Container -->
+    <div class="relative max-w-7xl w-full">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4">
+            
+            <!-- Step 1 -->
+            <div class="relative flex flex-col items-center group">
+                <!-- Icon Container -->
+                <div class="relative mb-6">
+                    <div class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    <div class="relative w-14 h-14 bg-gradient-to-br from-blue-50 to-white rounded-full flex items-center justify-center shadow group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                        </svg>
+                    </div>
+                    <!-- Step Number Badge -->
+                    <div class="absolute -top-3 -right-2 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs shadow-sm">
+                        1
+                    </div>
+                </div>
+
+                <!-- Arrow (Hidden on Mobile) -->
+                <div class="hidden md:block absolute top-14 -right-6 lg:-right-8 text-gray-300">
+                    <svg class="w-10 h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </div>
+
+                <!-- Content -->
+                <div class="text-center px-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                        Packing Properly
+                    </h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Professional packing services with high-quality materials ensuring complete safety of your belongings during transit
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative flex flex-col items-center group">
+                <!-- Icon Container -->
+                <div class="relative mb-6">
+                    <div class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    <div class="relative w-14 h-14 bg-gradient-to-br from-blue-50 to-white rounded-full flex items-center justify-center shadow group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <!-- Step Number Badge -->
+                    <div class="absolute -top-3 -right-2 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs shadow-sm">
+                        2
+                    </div>
+                </div>
+
+                <!-- Arrow (Hidden on Mobile) -->
+                <div class="hidden md:block absolute top-14 -right-6 lg:-right-8 text-gray-300">
+                    <svg class="w-10 h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </div>
+
+                <!-- Content -->
+                <div class="text-center px-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                        Loading Carefully
+                    </h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Expert loading techniques with specialized equipment to handle your items with maximum care and precision
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative flex flex-col items-center group">
+                <!-- Icon Container -->
+                <div class="relative mb-6">
+                    <div class="absolute inset-0 bg-blue-100 rounded-full blur-xl opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
+                    <div class="relative w-14 h-14 bg-gradient-to-br from-blue-50 to-white rounded-full flex items-center justify-center shadow group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
+                        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/>
+                        </svg>
+                    </div>
+                    <!-- Step Number Badge -->
+                    <div class="absolute -top-3 -right-2 w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-xs shadow-sm">
+                        3
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="text-center px-4">
+                    <h2 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                        Safe Transportation
+                    </h2>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Secure and timely delivery with GPS tracking and insurance coverage for complete peace of mind
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+  <!-- about -->
+
+  <div id="about" class="max-w-5xl mx-auto px-4 mt-12 md:mt-20 mb-12 md:mb-20">
+    <div class="w-full text-center mb-6">
+       <div class="max-w-5xl mx-auto px-4 text-center">
+       <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
+                    About Us
+                </h2>
+      <p class="text-sm text-gray-600 mt-3">Reliable, efficient and tailored packaging solutions for every business.</p>
+    </div>
+    </div>
+    <section class="flex flex-col md:flex-row items-start justify-center gap-10 md:gap-24 max-md:px-4">
+    <div class="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0 md:self-start">
+      <img class="max-w-md w-full object-cover rounded-2xl" src="img/28946216_warehouse_09.jpg" alt="">
+
+    </div>
+    <div class="text-sm text-slate-600 max-w-lg">
+      <h1 class="text-xl uppercase font-semibold text-slate-700">What we do?</h1>
+      <div class="w-24 h-[3px] rounded-full bg-gradient-to-r from-indigo-600 to-[#DDD9FF]"></div>
+      <p class="mt-8">Gayatri Packers & Movers and Gayatri Packaging are well-known service providers in Jaipur, offering complete solutions for shifting and packaging needs.</p>
+      <p class="mt-4">Gayatri Packers & Movers specializes in safe and hassle-free home relocation, office shifting, and vehicle transport. Our trained team ensures careful packing, secure loading, and on-time delivery to your destination.</p>
+      <p class="mt-4">Gayatri Packaging provides premium packaging materials including paper rolls, air-bubble sheets, thermocol, tapes, and strapping rolls. Our products are trusted for durability, protection, and consistent quality.</p>
+      <p class="mt-4">With a commitment to professionalism, transparency, and customer satisfaction, we work to deliver reliable services and high-quality materials — all under one roof.</p>
+     
+    </div>
+    </section>
+  </div>
+
+ 
+
+  <!-- Why Choose -->
+  <section class="w-full bg-white py-10 md:py-16">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+       <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
+                    Why Choose<span class="text-yellow-400"> Gayatri Packaging</span>
+                </h2>
+      <p class="text-sm text-gray-600 mt-3">Reliable, efficient and tailored packaging solutions for every business.</p>
+    </div>
+  </section>
+
+  <!-- features -->
+  <div class="flex flex-col md:flex-row items-center justify-center md:gap-20">
+    <img class="max-w-md w-3/4 md:w-1/2 object-contain rounded-md md:mr-16"
+      src="img/18443-Photoroom.png" alt="feature-image">
+    <div class="space-y-6 px-4 md:px-0">
+      <div
+        class="flex items-center justify-center rounded-xl py-4 pr-4 gap-6 max-w-md bg-violet-100 border border-violet-200">
+        <div class="p-6 aspect-square">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 18.667V24.5m4.668-8.167V24.5m4.664-12.833V24.5m2.333-21L15.578 13.587a.584.584 0 0 1-.826 0l-3.84-3.84a.583.583 0 0 0-.825 0L2.332 17.5M4.668 21v3.5m4.664-8.167V24.5"
+              stroke="#7F22FE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-base font-semibold text-slate-700">Quality Assured</h3>
+          <p class="text-sm text-slate-600">ISO certified processes with rigorous quality control at every stage.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center rounded-xl py-4 pr-4 gap-6 max-w-md">
+        <div class="p-6 aspect-square">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 11.667A2.333 2.333 0 0 0 11.667 14c0 1.19-.117 2.929-.304 4.667m4.972-3.36c0 2.776 0 7.443-1.167 10.36m5.004-1.144c.14-.7.502-2.683.583-3.523M2.332 14a11.667 11.667 0 0 1 21-7m-21 11.667h.01m23.092 0c.233-2.333.152-6.246 0-7"
+              stroke="#00A63E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M5.832 22.75C6.415 21 6.999 17.5 6.999 14a7 7 0 0 1 .396-2.333m2.695 13.999c.245-.77.525-1.54.665-2.333m-.255-15.4A7 7 0 0 1 21 14v2.333"
+              stroke="#00A63E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-base font-semibold text-slate-700">Certified Safe</h3>
+          <p class="text-sm text-slate-600">FDA approved materials and international safety compliance.</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center rounded-xl py-4 pr-4 gap-6 max-w-md">
+        <div class="p-6 aspect-square">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M4.668 25.666h16.333a2.333 2.333 0 0 0 2.334-2.333V8.166L17.5 2.333H7a2.333 2.333 0 0 0-2.333 2.333v4.667"
+              stroke="#F54900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16.332 2.333V7a2.334 2.334 0 0 0 2.333 2.333h4.667m-21 8.167h11.667M10.5 21l3.5-3.5-3.5-3.5"
+              stroke="#F54900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-base font-semibold text-slate-700">Growing Together</h3>
+          <p class="text-sm text-slate-600">Partner with us for sustainable and scalable packaging solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- testimonials -->
+    <section class="py-16 md:py-20 relative">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-purple-200 rounded-full blur-3xl opacity-20"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-200 rounded-full blur-3xl opacity-20"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <div class="inline-block mb-3">
+                    <p class="text-xs bg-indigo-200 text-indigo-600 font-medium px-3 py-1 rounded-full">Customer Stories</p>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-3">
+                    What Our <span class="text-yellow-400">Customers Say</span>
+                </h2>
+                 <p class="text-sm text-gray-600 mt-3">Join hundreds of satisfied businesses that have partnered with us for their packaging needs.</p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 relative border border-gray-200" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <div class="absolute top-4 right-4 opacity-10">
+                        <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.5 10c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c1.8 0 3.5-1.1 4.2-2.8.1-.3.1-.5.1-.8V10H6.5zm11 0c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c1.8 0 3.5-1.1 4.2-2.8.1-.3.1-.5.1-.8V10h-4.3z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background: linear-gradient(135deg, #a78bfa 0%, #3b82f6 100%); box-shadow: 0 4px 12px rgba(167, 139, 250, 0.4);">
+                            P
+                        </div>
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-900">Pooja Pareek</h3>
+                            <div class="flex gap-0.5 mt-1">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        इनकी शॉप पर उच्च कोटि का पैकेजिंग करने के लिए सारा सामना उपलब्ध है खासकर एयरबेबल रोल और स्ट्रेचफिल्म काफी प्रकार की वेराइटी मिलजाती है
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 relative border border-gray-200" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <div class="absolute top-4 right-4 opacity-10">
+                        <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.5 10c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c1.8 0 3.5-1.1 4.2-2.8.1-.3.1-.5.1-.8V10H6.5zm11 0c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c1.8 0 3.5-1.1 4.2-2.8.1-.3.1-.5.1-.8V10h-4.3z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%); box-shadow: 0 4px 12px rgba(236, 72, 153, 0.4);">
+                            T
+                        </div>
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-900">Ayush Gupta</h3>
+                            <div class="flex gap-0.5 mt-1">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Got our home shifting done through Gayatri packaging, they did a great job
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 relative border border-gray-200" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <div class="absolute top-4 right-4 opacity-10">
+                        <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.5 10c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c1.8 0 3.5-1.1 4.2-2.8.1-.3.1-.5.1-.8V10H6.5zm11 0c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c1.8 0 3.5-1.1 4.2-2.8.1-.3.1-.5.1-.8V10h-4.3z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%); box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);">
+                            P
+                        </div>
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-900">Purab Mittal</h3>
+                            <div class="flex gap-0.5 mt-1">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Good service, excellent quality, take initiative to make available for any creative packaging options like customise printing
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 relative border border-gray-200" style="box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <div class="absolute top-4 right-4 opacity-10">
+                        <svg class="w-10 h-10 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.5 10c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c1.8 0 3.5-1.1 4.2-2.8.1-.3.1-.5.1-.8V10H6.5zm11 0c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5c1.8 0 3.5-1.1 4.2-2.8.1-.3.1-.5.1-.8V10h-4.3z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg" style="background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%); box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);">
+                            V
+                        </div>
+                        <div>
+                            <h3 class="text-base font-semibold text-gray-900">Vini Hada</h3>
+                            <div class="flex gap-0.5 mt-1">
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        U can buy for all E-commerce packing or packers and movers packing material there.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- contact -->
+  <!-- Google Map for: Hotel Royal Blue, Oop Karni Vihar, Vaishali Nagar, Thana, Rajasthan 302021 -->
+  <div class="max-w-6xl mx-auto px-4 mt-8 md:mt-12 mb-6">
+    <div class="w-full rounded-lg overflow-hidden shadow-sm">
+      <iframe
+        class="w-full h-64 md:h-96 border-0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Hotel+Royal+Blue+Oop+Karni+Vihar+Vaishali+Nagar+Thana+Rajasthan+302021&output=embed">
+      </iframe>
+    </div>
+  </div>
+
+ <section id="contact" class="max-w-6xl mx-auto px-4 mt-12 md:mt-20 mb-16 md:mb-28">
+  <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+    
+    <!-- Left: form -->
+    <div class="w-full md:w-1/2">
+      <form 
+       id="contact-form"
+        action="https://formsubmit.co/pareekshiva2004@gmail.com" 
+        method="POST"
+        class="flex flex-col items-start text-sm text-slate-800"
+      >
+
+        <!-- 🔒 Anti-spam -->
+        <input type="hidden" name="_captcha" value="false">
+
+
+        <p class="text-xs bg-indigo-200 text-indigo-600 font-medium px-3 py-1 rounded-full">Contact Us</p>
+        <h1 class="text-4xl font-bold py-4">Let’s Get In Touch.</h1>
+        <p class="text-gray-500 pb-6">Or just reach out manually to us at 
+          <a href="#" class="text-indigo-600 hover:underline">hello@prebuiltui.com</a>
+        </p>
+
+        <div class="w-full">
+
+          <!-- Full Name -->
+          <label for="name" class="font-medium">Full Name</label>
+          <div class="flex items-center mt-2 mb-4 h-10 pl-3 border border-slate-300 rounded-full focus-within:ring-2 focus-within:ring-indigo-400 transition-all overflow-hidden">
+            <input type="text" name="name" required class="h-full px-2 w-full outline-none bg-transparent" placeholder="Enter your full name">
+          </div>
+
+          <!-- Email -->
+          <label for="email-address" class="font-medium mt-4">Email Address</label>
+          <div class="flex items-center mt-2 mb-4 h-10 pl-3 border border-slate-300 rounded-full focus-within:ring-2 focus-within:ring-indigo-400 transition-all overflow-hidden">
+            <input type="email" name="email" required class="h-full px-2 w-full outline-none bg-transparent" placeholder="Enter your email address">
+          </div>
+
+          <!-- Message -->
+          <label for="message" class="font-medium mt-4">Message</label>
+          <textarea
+            name="message"
+            rows="4"
+            required
+            class="w-full mt-2 p-2 bg-transparent border border-slate-300 rounded-lg resize-none outline-none focus:ring-2 focus-within:ring-indigo-400 transition-all"
+            placeholder="Enter your message"
+          ></textarea>
+
+          <!-- Submit Button -->
+          <button type="submit" class="flex items-center justify-center gap-1 mt-5 bg-indigo-500 hover:bg-indigo-600 text-white py-2.5 w-full rounded-full transition">
+            Submit Form
+            <svg class="mt-0.5" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="m18.038 10.663-5.625 5.625a.94.94 0 0 1-1.328-1.328l4.024-4.023H3.625a.938.938 0 0 1 0-1.875h11.484l-4.022-4.025a.94.94 0 0 1 1.328-1.328l5.625 5.625a.935.935 0 0 1-.002 1.33" fill="#fff"/>
+            </svg>
+          </button>
+
+        </div>
+      </form>
+    </div>
+
+    <!-- Right: image -->
+    <div class="w-full md:w-1/2 flex items-center justify-center">
+      <img src="img/Contact-us.png" alt="Contact" class="w-full max-w-2xl object-cover">
+    </div>
+
+  </div>
+</section>
+
+<div id="toast-container" class="fixed top-6 right-6 z-[9999] space-y-3"></div>
+
+
+
+
+  <!-- footer -->
+
+  <footer class="w-full bg-gradient-to-b from-[#1B004D] to-[#2E0A6F] text-white">
+    <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col items-center">
+        <div class="flex items-center space-x-3 mb-6">
+            <span class="text-2xl font-bold">Gayatri P&M</span>
+        </div>
+        <p class="text-center max-w-xl text-sm font-normal leading-relaxed">
+           Delivering quality packaging and reliable moving solutions for homes and businesses. Your trust, our responsibility.
+        </p>
+    </div>
+    <div class="border-t border-[#3B1A7A]">
+        <div class="max-w-7xl mx-auto px-6 py-6 text-center text-sm font-normal">
+            <a href="#">Gayatri P&M</a> ©2025. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+
+</html>
+
+<!-- WhatsApp Floating Button -->
+<!-- Replace the phone number in the href with your business number (country code + number, no + or dashes) -->
+<a href="https://wa.me/7737360673?text=Hello%20Gayatri%20Packaging" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"
+  class="fixed right-4 bottom-6 md:right-8 md:bottom-8 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-3 md:p-4 rounded-full shadow-lg flex items-center justify-center transition-transform active:scale-95">
+  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" class="w-6 h-6 md:w-8 md:h-8">
+    <path d="M20.52 3.48A11.92 11.92 0 0 0 12.003.001C5.373.001-.001 5.374-.001 12c0 2.112.553 4.083 1.52 5.83L0 24l6.43-1.663A11.93 11.93 0 0 0 12 24c6.627 0 12.003-5.373 12.003-12 0-3.182-1.243-6.077-3.483-8.52ZM12.003 21.908c-1.486 0-2.945-.4-4.212-1.158l-.302-.174-3.82.99.993-3.73-.186-.308A8.88 8.88 0 0 1 3.127 12c0-4.92 4.007-8.907 8.876-8.907 2.376 0 4.608.928 6.285 2.605 1.676 1.676 2.606 3.91 2.606 6.286 0 4.87-3.987 8.876-8.886 8.876Zm4.86-6.444c-.266-.133-1.57-.773-1.814-.861-.243-.09-.42-.133-.597.133-.178.266-.69.86-.846 1.037-.155.178-.31.2-.577.066-.266-.133-1.122-.412-2.136-1.321-.79-.704-1.323-1.574-1.478-1.84-.155-.266-.017-.41.117-.543.12-.12.266-.31.398-.466.133-.155.178-.266.266-.443.089-.178.044-.333-.022-.466-.066-.133-.597-1.44-.82-1.976-.216-.52-.436-.45-.597-.458l-.51-.009c-.178 0-.466.066-.71.31-.243.244-.926.903-.926 2.2 0 1.297.948 2.553 1.08 2.727.133.178 1.87 2.88 4.53 4.036 1.852.82 2.65.92 3.598.744.586-.11 1.57-.641 1.793-1.26.223-.62.223-1.15.155-1.26-.066-.11-.243-.155-.51-.288Z" fill="currentColor"/>
+  </svg>
+</a>
